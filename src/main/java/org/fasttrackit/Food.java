@@ -8,4 +8,8 @@ public class Food {
     double quantity;
     boolean inStock;
     LocalDateTime expiryDate;
+
+    public Food(String name) {
+        this.name = name;
+    }
 }

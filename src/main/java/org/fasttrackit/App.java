@@ -18,11 +18,9 @@ public class App
         animal.favoriteActivityName = "Running";
         animal.favoriteFoodName = "Pizza";
 
-        EntertainmentActivity activity = new EntertainmentActivity();
-        activity.name = "Running";
+        EntertainmentActivity activity = new EntertainmentActivity("Running");
 
-        Food food = new Food();
-        food.name = "Purina";
+        Food food = new Food("Purina");
         food.quantity = 10;
         food.price = 79.99;
         food.inStock = true;
