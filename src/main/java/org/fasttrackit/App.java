@@ -5,34 +5,33 @@ import java.time.LocalDateTime;
 public class App
 {
     public static void main( String[] args ) {
-
         Rescuer rescuer = new Rescuer();
-        rescuer.name = "John";
-        rescuer.money = 300;
+        rescuer.setName("Jhon");
+        rescuer.setMoney(300);
 
         Animal animal = new Animal();
-        animal.name = "Chaika";
-        animal.age = 4.5;
-        animal.healthLevel = 10;
-        animal.happinessLevel = 10;
-        animal.favoriteActivityName = "Running";
-        animal.favoriteFoodName = "Pizza";
+        animal.setName("Chaika");
+        animal.setAge(4.5);
+        animal.setHealthLevel(10);
+        animal.setHappinessLevel(10);
+        animal.setFavoriteActivityName("Running");
+        animal.setFavoriteFoodName("Pizza");
 
         EntertainmentActivity activity = new EntertainmentActivity("Running");
 
         Food food = new Food("Purina");
-        food.quantity = 10;
-        food.price = 79.99;
-        food.inStock = true;
-        food.expiryDate = LocalDateTime.of(2018, 12, 31, 12, 0, 0);
+        food.setQuantity(10);
+        food.setPrice(79.99);
+        food.setInStock(true);
+        food.setExpiryDate(LocalDateTime.of(2018, 12, 31, 12, 0, 0));
 
         MedicalStaff medic = new MedicalStaff();
-        medic.name = "Dr. Who";
-        medic.specialization = "General Medicine";
+        medic.setName("Dr Who");
+        medic.setSpecialization("General Medicine");
 
         Game game = new Game();
-        game.rescuer = rescuer;
-        game.animal = animal;
-        game.medic = medic;
+        game.setRescuer(rescuer);
+        game.setAnimal(animal);
+        game.setMedic(medic);
     }
 }
