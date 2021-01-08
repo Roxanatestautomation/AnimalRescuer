@@ -20,4 +20,12 @@ public class Rescuer {
     public void setMoney(double money) {
         this.money = money;
     }
+
+    public void feed(Animal animal, Food food){
+        System.out.println(this.name+" just gave some "+food.getName()+" food to "+animal.getName()+".");
+    }
+
+    public void entertain(Animal animal, EntertainmentActivity activity){
+        System.out.println(this.name+" just played "+activity.getName()+" with "+animal.getName()+".");
+    }
 }
