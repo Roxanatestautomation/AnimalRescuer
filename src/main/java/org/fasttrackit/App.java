@@ -36,5 +36,15 @@ public class App
 
         rescuer.feed(animal,food);
         rescuer.entertain(animal, activity);
+
+        animal.expressJoy();
+
+        Dog dog = new Dog();
+        dog.setName("Panda Maci");
+        dog.expressJoy();
+
+        Fish fish = new Fish();
+        fish.setName("Nemo");
+        fish.expressJoy();
     }
 }

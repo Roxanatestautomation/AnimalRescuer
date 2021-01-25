@@ -11,4 +11,8 @@ public class Fish extends Animal {
     public void setWingsCount(int wingsCount) {
         this.wingsCount = wingsCount;
     }
+
+    public void expressJoy(){
+        System.out.println(getName() + " is swimming playfully.");
+    }
 }

@@ -11,4 +11,8 @@ public class Dog extends Animal {
     public void setBarkPower(double barkPower) {
         this.barkPower = barkPower;
     }
+
+    public void expressJoy(){
+        System.out.println(getName() + " is wagging his tail.");
+    }
 }

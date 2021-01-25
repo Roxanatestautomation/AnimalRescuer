@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 public class Animal {
+
     private String name;
     private double age;
     private double healthLevel;
@@ -8,6 +9,10 @@ public class Animal {
     private double happinessLevel;
     private String favoriteActivityName;
     private String favoriteFoodName;
+
+    public void expressJoy(){
+        System.out.println(name + " is feeling good.");
+    }
 
     public String getName() {
         return name;
