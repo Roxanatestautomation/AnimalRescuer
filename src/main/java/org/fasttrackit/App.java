@@ -39,11 +39,11 @@ public class App
 
         animal.expressJoy();
 
-        Animal dog = new Dog();
+        Dog dog = new Dog();
         dog.setName("Panda Maci");
         dog.expressJoy();
 
-        Animal fish = new Fish();
+        Fish fish = new Fish();
         fish.setName("Nemo");
         fish.expressJoy();
     }
