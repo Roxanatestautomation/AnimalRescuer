@@ -13,7 +13,8 @@ public class App
         animal.setName("Chaika");
         animal.setAge(4.5);
         animal.setHealthLevel(10);
-        animal.setHappinessLevel(10);
+        animal.setHappinessLevel(9);
+        animal.setHungerLevel(6);
         animal.setFavoriteActivityName("Running");
         animal.setFavoriteFoodName("Pizza");
 

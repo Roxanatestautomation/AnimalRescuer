@@ -23,9 +23,20 @@ public class Rescuer {
 
     public void feed(Animal animal, Food food){
         System.out.println(this.name+" just gave some "+food.getName()+" food to "+animal.getName()+".");
+
+        double hungerLevel = animal.getHungerLevel();
+        hungerLevel--;
+        animal.setHungerLevel(hungerLevel);
+
+        System.out.println(animal.getName()+"`s hunger level is "+animal.getHungerLevel());
+
     }
 
     public void entertain(Animal animal, EntertainmentActivity activity){
         System.out.println(this.name+" just played "+activity.getName()+" with "+animal.getName()+".");
+
+        animal.setHappinessLevel(animal.getHappinessLevel() + 1);
+
+        System.out.println(animal.getName()+"`s happiness level is "+animal.getHappinessLevel());
     }
 }
