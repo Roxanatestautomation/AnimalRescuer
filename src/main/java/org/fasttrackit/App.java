@@ -20,7 +20,7 @@ public class App
 
         EntertainmentActivity activity = new EntertainmentActivity("Running");
 
-        Food food = new Food("Purina");
+        Food food = new Food("Pizza");
         food.setQuantity(10);
         food.setPrice(79.99);
         food.setInStock(true);
