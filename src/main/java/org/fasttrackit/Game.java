@@ -12,14 +12,6 @@ public class Game {
     private List<Food> availableFood = new ArrayList<>();
     private EntertainmentActivity[] availableActivities = new EntertainmentActivity[10];
 
-    public List<Food> getAvailableFood() {
-        return availableFood;
-    }
-
-    public EntertainmentActivity[] getAvailableActivities() {
-        return availableActivities;
-    }
-
     private void initFood() {
         Food dogFood = new Food("Purina");
         Food fishFood = new Food("Tetra");
@@ -59,7 +51,6 @@ public class Game {
             }
         }
     }
-
 
     public Rescuer getRescuer() {
         return rescuer;
